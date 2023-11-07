@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LP Maeztra</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imagens/cropped-icone-wordpress-32x32.png" sizes="32x32" />
+</head>
+<body>
+    <header>
+        <div class="header-top-msg">
+            <span>Acompanhe as melhores promoções disponíveis aqui na Maeztra.</span>
+        </div>
+        <div class="header-top">
+            <div class="container-bar" onclick="alterarBar(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="header-menu-principal-mob" id="header-menu-principal-mob">
+                <div class="header-menu-principal-mob-li"><span>Novidades</span></div>
+                <div class="header-menu-principal-mob-li"><span>Vestidos</span></div>
+                <div class="header-menu-principal-mob-li"><span>Roupas</span></div>
+                <div class="header-menu-principal-mob-li"><span>Sapatos</span></div>
+                <div class="header-menu-principal-mob-li"><span>Lingerie</span></div>
+                <div class="header-menu-principal-mob-li"><span>Acessórios</span></div>
+                <div class="header-menu-principal-mob-li"><span>OUTLET</span></div>
+            </div>
+            <div class="header-top-logo">
+                <a href="#">
+                    <img src="imagens/header.png" alt="Logo" />
+                </a>                
+            </div>
+            <div class="header-top-pesquisa">
+                <form action="#">
+                    <input type="text" placeholder="O Que Você Busca?">
+                    <button>Buscar</button>
+                </form>
+                <img src="imagens/search.png" alt="search">
+            </div>
+            <div class="header-top-menu-lateral">
+                <div id="header-top-menu-1">
+                    <img src="imagens/icon-user.png" alt="Conta">
+                    <span>Minha Conta</span>
+                </div>
+                <div id="header-top-menu-2">
+                    <img src="imagens/icon-heart.png" alt="Conta">
+                    <span>Minha Conta</span>
+                </div>
+                <div id="header-top-menu-3">
+                    <img src="imagens/icon-shoppingbag.png" alt="Carrinho">
+                    <span>Meu Carrinho</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-menu-principal">
+            <div><img src="imagens/icon-dress.png" alt="Icone Roupa"><span class="link-destaque">Novidades</span></div>
+            <div><span>Vestidos</span></div>
+            <div><span>Roupas</span></div>
+            <div><span>Sapatos</span></div>
+            <div><span>Lingerie</span></div>
+            <div><span>Acessórios</span></div>
+            <div><span>OUTLET</span></div>
+        </div>
+    </header>
+    <main>
+        <section class="destaque">
+            <div class="prev-arrow"><img src="imagens/prev.png" alt="prev" onclick="scrollCarousel('destaque-cards', 2, 'prev');"></div>
+            <div class="destaque-cards" id="destaque-cards">
+                <div class="card" id="card-1">
+                    <div class="destaque-txt">
+                        <h2>Promoções de Outono</h2>
+                        <p>Confiras os melhores looks para combinar com você nesse Outono</p>
+                        <button>Conferir</button>
+                    </div>
+                </div>
+                <div class="card" id="card-2">
+                    <div class="destaque-txt">
+                        <h2>Promoções de Outono</h2>
+                        <p>Confiras os melhores looks para combinar com você nesse Outono</p>
+                        <button>Conferir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="next-arrow"><img src="imagens/next.png" alt="next" onclick="scrollCarousel('destaque-cards', 2, 'next');"></div>
+            <div class="destaque-opts">
+                <div id="destaque-opt-1" class="destaque-opt destaque-opt-checked"></div>
+                <div id="destaque-opt-2" class="destaque-opt"></div>                
+            </div>
+        </section>
+        <section class="vantagens">
+            <div class="vantagens-title-principal">
+                <h2>Por que comprar na Maeztra?</h2>
+            </div>
+            <div class="vantagens-cards">
+                <div class="vantagens-card">
+                    <div>
+                        <img src="imagens/tipbar05.png" alt="tipbar05">
+                    </div>
+                    <div>
+                        <h3>Produtos importados</h3>
+                        <p>Produto de Alta Qualidade</p>
+                    </div>
+                </div>
+                <div class="vantagens-card">
+                    <div>
+                        <img src="imagens/tipbar04.png" alt="tipbar04">
+                    </div>
+                    <div>
+                        <h3>Estoque no Brazil</h3>
+                        <p>Produtos mais perto de você!</p>
+                    </div>
+                </div>
+                <div class="vantagens-card">
+                    <div>
+                        <img src="imagens/tipbar03.png" alt="tipbar03">
+                    </div>
+                    <div>
+                        <h3>Trocas Garantidas</h3>
+                        <p>Trocas em até 48 horas, vejas as regras</p>
+                    </div>
+                </div>
+                <div class="vantagens-card">
+                    <div>
+                        <img src="imagens/tipbar02.png" alt="tipbar02">
+                    </div>
+                    <div>
+                        <h3>Ganhe 5% off</h3>
+                        <p>Pagando à vista no Cartão</p>
+                    </div>
+                </div>
+                <div class="vantagens-card">
+                    <div>
+                        <img src="imagens/tipbar01.png" alt="tipbar01">
+                    </div>
+                    <div>
+                        <h3>Frete Grátis</h3>
+                        <p>Em compras acima de R$ 499,00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="parceiros">
+            <div class="parceiros-title-principal">
+                <h2>Marcas Parceiras</h2>
+            </div>
+            <div class="parceiros-lista">
+                <div><img src="imagens/comma.png" alt="comma"></div>
+                <div><img src="imagens/melissa.png" alt="melissa"></div>
+                <div><img src="imagens/forever21.png" alt="forever21"></div>
+                <div><img src="imagens/zara.png" alt="zara"></div>
+                <div><img src="imagens/ann-taylor.png" alt="ann-taylor"></div>
+            </div>
+        </section>
+        <section class="mais-pedidos">
+            <div><h2>As Mais Pedidas</h2></div>
+            <div class="mais-pedidos-lista">
+                <div class="mais-pedidos-prev-arrow"><img src="imagens/prev.png" alt="prev" onclick="scrollCarouselMult('mais-pedidos-cards', 2, 'prev');"></div>
+                <div class="mais-pedidos-cards" id="mais-pedidos-cards">
+                    <div class="mais-pedidos-card" id="mais-pedidos-card-1">
+                        <div><img src="imagens/produto01.png" alt="produto01"></div>
+                        <div class="mais-pedidos-cores">
+                            <div style="background-color: #DEAC71;"></div>
+                            <div style="background-color: #D37164;"></div>
+                            <div style="background-color: #6497D3;"></div>
+                            <div style="background-color: #3C3B79;"></div>
+                        </div>
+                        <div><span class="produto-valor">R$ 500,00</span></div>
+                        <div><h3>Faux Suede Mini Skirt</h3></div>
+                        <div>
+                            <p>A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</p>
+                        </div>
+                        <div><button>Adicionar</button></div>
+                    </div>
+                    <div class="mais-pedidos-card" id="mais-pedidos-card-1">
+                        <div><img src="imagens/produto02.png" alt="produto01"></div>
+                        <div class="mais-pedidos-cores">
+                            <div style="background-color: #DEAC71;"></div>
+                            <div style="background-color: #D37164;"></div>
+                            <div style="background-color: #6497D3;"></div>
+                            <div style="background-color: #3C3B79;"></div>
+                        </div>
+                        <div><span class="produto-valor">R$ 500,00</span></div>
+                        <div><h3>Faux Suede Mini Skirt</h3></div>
+                        <div>
+                            <p>A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</p>
+                        </div>
+                        <div><button>Adicionar</button></div>
+                    </div>
+                    <div class="mais-pedidos-card" id="mais-pedidos-card-1">
+                        <div><img src="imagens/produto01.png" alt="produto01"></div>
+                        <div class="mais-pedidos-cores">
+                            <div style="background-color: #DEAC71;"></div>
+                            <div style="background-color: #D37164;"></div>
+                            <div style="background-color: #6497D3;"></div>
+                            <div style="background-color: #3C3B79;"></div>
+                        </div>
+                        <div><span class="produto-valor">R$ 500,00</span></div>
+                        <div><h3>Faux Suede Mini Skirt</h3></div>
+                        <div>
+                            <p>A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</p>
+                        </div>
+                        <div><button>Adicionar</button></div>
+                    </div>
+                    <div class="mais-pedidos-card" id="mais-pedidos-card-1">
+                        <div><img src="imagens/produto02.png" alt="produto01"></div>
+                        <div class="mais-pedidos-cores">
+                            <div style="background-color: #DEAC71;"></div>
+                            <div style="background-color: #D37164;"></div>
+                            <div style="background-color: #6497D3;"></div>
+                            <div style="background-color: #3C3B79;"></div>
+                        </div>
+                        <div><span class="produto-valor">R$ 500,00</span></div>
+                        <div><h3>Faux Suede Mini Skirt</h3></div>
+                        <div>
+                            <p>A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</p>
+                        </div>
+                        <div><button>Adicionar</button></div>
+                    </div>
+                    <div class="mais-pedidos-card" id="mais-pedidos-card-1">
+                        <div><img src="imagens/produto01.png" alt="produto01"></div>
+                        <div class="mais-pedidos-cores">
+                            <div style="background-color: #DEAC71;"></div>
+                            <div style="background-color: #D37164;"></div>
+                            <div style="background-color: #6497D3;"></div>
+                            <div style="background-color: #3C3B79;"></div>
+                        </div>
+                        <div><span class="produto-valor">R$ 500,00</span></div>
+                        <div><h3>Faux Suede Mini Skirt</h3></div>
+                        <div>
+                            <p>A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</p>
+                        </div>
+                        <div><button>Adicionar</button></div>
+                    </div>
+                    <div class="mais-pedidos-card" id="mais-pedidos-card-1">
+                        <div><img src="imagens/produto01.png" alt="produto01"></div>
+                        <div class="mais-pedidos-cores">
+                            <div style="background-color: #DEAC71;"></div>
+                            <div style="background-color: #D37164;"></div>
+                            <div style="background-color: #6497D3;"></div>
+                            <div style="background-color: #3C3B79;"></div>
+                        </div>
+                        <div><span class="produto-valor">R$ 500,00</span></div>
+                        <div><h3>Faux Suede Mini Skirt</h3></div>
+                        <div>
+                            <p>A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</p>
+                        </div>
+                        <div><button>Adicionar</button></div>
+                    </div>
+                </div>
+                <div class="mais-pedidos-next-arrow"><img src="imagens/next.png" alt="next" onclick="scrollCarouselMult('mais-pedidos-cards', 2, 'next');"></div>
+            </div>
+        </section>
+        <section class="novidades">
+            <div class="novidades-esq">
+                <h2>Lorem ipsum</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Interdum mauris posuere fusce proin mattis. 
+                    Hendrerit cras ut nunc enim dictum. 
+                    Mattis proin ut quis donec sed eget nulla. 
+                    Vel mi ut mauris integer. 
+                    Nibh sagittis in lobortis sed cursus condimentum velit pharetra. 
+                    Amet luctus ut vulputate scelerisque placerat consequat. 
+                    Neque arcu mi iaculis id. Vel vitae, pharetra, a nec tristique. 
+                    Feugiat id tortor eu mauris pulvinar velit massa. 
+                    Ut ornare augue eget convallis volutpat aliquet. 
+                    Sed sed pellentesque porttitor phasellus donec condimentum sit sapien.
+                </p>
+            </div>
+            <div class="novidades-dir">
+                <img src="imagens/novidade.png" alt="novidade">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-newsletter">
+            <span>Recebe Nossa Newsletter</span>
+            <form action="#">
+                <input type="text" placeholder="Digite seu e-mail">
+                <button>Enviar</button>
+            </form>            
+        </div>
+        <div class="footer-links">
+            <div>
+                <div class="footer-links-li"><a href="#"><span class="footer-links-title">Informações</span></a><img class="btnplus" src="imagens/plus.png" alt="plus" onclick="showInfo('li-sub-1');"></div>
+                <div class="footer-links-li li-sub-1"><a href="#"><span>Quem Somos</span></a></div>
+                <div class="footer-links-li li-sub-1"><a href="#"><span>Prazo de Envio</span></a></div>
+                <div class="footer-links-li li-sub-1"><a href="#"><span>Trocas e Devoluções</span></a></div>
+                <div class="footer-links-li li-sub-1"><a href="#"><span>Promoções e Cupons</span></a></div>
+            </div>
+            <div>
+                <div class="footer-links-li"><a href="#"><span class="footer-links-title">Minha Conta</span></a><img class="btnplus" src="imagens/plus.png" alt="plus" onclick="showInfo('li-sub-2');"></div>
+                <div class="footer-links-li li-sub-2"><a href="#"><span>Minha Conta</span></a></div>
+                <div class="footer-links-li li-sub-2"><a href="#"><span>Meus Pedidos</span></a></div>
+                <div class="footer-links-li li-sub-2"><a href="#"><span>Cadastre-se</span></a></div>
+            </div>
+            <div>
+                <div class="footer-links-li"><a href="#"><span class="footer-links-title">Onde nos Encontrar</span></a><img class="btnplus" src="imagens/plus.png" alt="plus" onclick="showInfo('li-sub-3');"></div>
+                <div class="footer-links-li li-sub-3"><a href="#"><span>Lojas</span></a></div>
+                <div class="footer-links-li li-sub-3"><a href="#"><span>Endereço</span></a></div>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div class="footer-info-redes-sociais">
+                <div><a href="#"><img src="imagens/facebook.png" alt="facebook"></a></div>
+                <div><a href="#"><img src="imagens/linkedin.png" alt="linkedin"></a></div>
+                <div><a href="#"><img src="imagens/instagram.png" alt="instagram"></a></div>
+                <div><a href="#"><img src="imagens/youtube.png" alt="youtube"></a></div>
+            </div>
+            <div class="footer-info-cartoes">
+                <div><img src="imagens/visa.png" alt="visa"></div>
+                <div><img src="imagens/mastercard.png" alt="mastercard"></div>
+                <div><img src="imagens/visa.png" alt="visa"></div>
+                <div><img src="imagens/mastercard.png" alt="mastercard"></div>
+            </div>
+            <div class="footer-info-assinatura">
+                <div class="footer-info-assinatura-by-vtex">
+                    <div><span>Powered by</span></div>
+                    <div><img src="imagens/byvtex.png" alt="by vtex"></div>                    
+                </div>
+                <div class="footer-info-assinatura-by-maeztra">
+                    <div>Developed by</div>
+                    <div><img src="imagens/bymaeztra.png" alt="by maeztra"></div>                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
